@@ -53,7 +53,7 @@ Add these lines to your `.env` file and replace `"your_token_here"` with your ac
 
 After setting up your configuration, you can use the Conta Azul service throughout your Laravel application. Here's an example of listing customers using the Conta Azul facade:
 
-```
+```php
 use EliseuSantos\Facades\ContaAzul;
 
 $customers = ContaAzul::customer()->getCustomers();
