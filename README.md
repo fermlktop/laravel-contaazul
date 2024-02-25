@@ -1,8 +1,6 @@
 # Laravel Conta Azul Integration Package
 This package provides a simple and elegant way to integrate Laravel applications with Conta Azul's API, offering an easy-to-use service and facade.
 
-![Header Image](https://github.com/EliseuSantos/.github/header.png)
-
 <p align="center">
  <a href="https://github.com/EliseuSantos/laravel-contaazul/actions?query=workflow%3ATests"><img src="https://github.com/EliseuSantos/laravel-contaazul/workflows/Tests/badge.svg" style="max-width:100%;"  alt="tests badge"></a>
  <a href="https://packagist.org/packages/eliseusantos/laravel-contaazul"><img src="https://img.shields.io/packagist/v/macsidigital/laravel-contaazul.svg?style=flat-square" alt="version badge"/></a>
