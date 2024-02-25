@@ -5,7 +5,7 @@ namespace EliseuSantos\ContaAzul\Providers;
 use Illuminate\Http\Client\PendingRequest;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\ServiceProvider;
-use EliseuSantos\ContaAzul\ContaAzulService;
+use EliseuSantos\ContaAzul\ContaAzul;
 
 class ContaAzulServiceProvider extends ServiceProvider
 {
@@ -16,7 +16,7 @@ class ContaAzulServiceProvider extends ServiceProvider
             'contaazul'
         );
 
-        $this->app->singleton(ContaAzulService::class, fn ($app) => new ContaAzulService);
+        $this->app->singleton(ContaAzul::class, fn ($app) => new ContaAzul);
     }
 
     public function boot(): void

@@ -12,16 +12,16 @@ use EliseuSantos\ContaAzul\Services\ServicesService;
 use EliseuSantos\ContaAzul\Services\SupplierService;
 use Illuminate\Support\Facades\Http;
 
-class ContaAzulService
+class ContaAzul
 {
-    protected $authService;
-    protected $contractService;
-    protected $customerService;
-    protected $planService;
-    protected $productService;
-    protected $saleService;
-    protected $servicesService;
-    protected $supplierService;
+    protected AuthService $authService;
+    protected ContractService $contractService;
+    protected CustomerService $customerService;
+    protected PlanService $planService;
+    protected ProductService $productService;
+    protected SaleService $saleService;
+    protected ServicesService $servicesService;
+    protected SupplierService $supplierService;
 
     public function __construct(
         AuthService $authService,
