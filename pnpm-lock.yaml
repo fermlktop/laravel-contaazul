@@ -1114,7 +1114,7 @@ packages:
     bundledDependencies:
       - '@isaacs/string-locale-compare'
       - '@npmcli/arborist'
-      - '@npmcli/config'
+      - '@npmcli/Configs'
       - '@npmcli/fs'
       - '@npmcli/map-workspaces'
       - '@npmcli/package-json'

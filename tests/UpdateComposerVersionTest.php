@@ -8,17 +8,14 @@ class UpdateComposerVersionTest extends TestCase
 
     protected function setUp(): void
     {
-        // Faz backup do composer.json existente
         if (file_exists(__DIR__ . '/../composer.json')) {
             $this->backupComposerJson = file_get_contents(__DIR__ . '/../composer.json');
         }
-        // Cria um composer.json de teste
         file_put_contents(__DIR__ . '/../composer.json', json_encode(['version' => '0.1.0']));
     }
 
     protected function tearDown(): void
     {
-        // Restaura o composer.json original
         if ($this->backupComposerJson !== null) {
             file_put_contents(__DIR__ . '/../composer.json', $this->backupComposerJson);
         }
