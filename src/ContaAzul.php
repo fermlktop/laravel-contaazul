@@ -14,41 +14,14 @@ use Illuminate\Support\Facades\Http;
 
 class ContaAzul
 {
-    protected AuthService $authService;
-    protected ContractService $contractService;
-    protected CustomerService $customerService;
-    protected PlanService $planService;
-    protected ProductService $productService;
-    protected SaleService $saleService;
-    protected ServicesService $servicesService;
-    protected SupplierService $supplierService;
-
-    public function __construct(
-        AuthService $authService,
-        ContractService $contractService,
-        CustomerService $customerService,
-        PlanService $planService,
-        ProductService $productService,
-        SaleService $saleService,
-        ServicesService $servicesService,
-        SupplierService $supplierService,
-    ) {
-        $this->authService = $authService;
-        $this->contractService = $contractService;
-        $this->customerService = $customerService;
-        $this->planService = $planService;
-        $this->productService = $productService;
-        $this->saleService = $saleService;
-        $this->servicesService = $servicesService;
-        $this->supplierService = $supplierService;
-    }
+    public function __construct() {}
 
     /**
      * @return AuthService
      */
     public function auth(): AuthService
     {
-        return $this->authService;
+        return app(AuthService::class);
     }
 
     /**
@@ -56,7 +29,7 @@ class ContaAzul
      */
     public function contract(): ContractService
     {
-        return $this->contractService;
+        return app(ContractService::class);
     }
 
     /**
@@ -64,7 +37,7 @@ class ContaAzul
      */
     public function customer(): CustomerService
     {
-        return $this->customerService;
+        return app(CustomerService::class);
     }
 
     /**
@@ -72,7 +45,7 @@ class ContaAzul
      */
     public function plan(): PlanService
     {
-        return $this->planService;
+        return app(PlanService::class);
     }
 
     /**
@@ -80,7 +53,7 @@ class ContaAzul
      */
     public function product(): ProductService
     {
-        return $this->productService;
+        return app(ProductService::class);
     }
 
     /**
@@ -88,7 +61,7 @@ class ContaAzul
      */
     public function sale(): SaleService
     {
-        return $this->saleService;
+        return app(SaleService::class);
     }
 
     /**
@@ -96,7 +69,7 @@ class ContaAzul
      */
     public function service(): ServicesService
     {
-        return $this->servicesService;
+        return app(ServicesService::class);
     }
 
     /**
@@ -104,6 +77,6 @@ class ContaAzul
      */
     public function supplier(): SupplierService
     {
-        return $this->supplierService;
+        return app(SupplierService::class);
     }
 }
