@@ -10,11 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Update Packagist
-        uses: KnpLabs/packagist-api-action@v1
+        uses: mnavarrocarter/packagist-update@v1.0
         with:
-          username: ${{ secrets.PACKAGIST_USERNAME }}
-          apiToken: ${{ secrets.PACKAGIST_API_TOKEN }}
-          packageName: vendor/laravel-contaazul
+          username: "eliseusantos"
+          api_token: ${{ secrets.PACKAGIST_TOKEN }}
+          package_name: vendor/laravel-contaazul
+          domain: "packagist.org"
