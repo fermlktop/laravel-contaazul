@@ -5,7 +5,7 @@ if (version_compare(PHP_VERSION, '8.3.0', '<')) {
 }
 
 function updateComposerVersion(string $newVersion): void {
-    $composerFilePath = __DIR__ . '/composer.json';
+    $composerFilePath = __DIR__ . '/../composer.json';
 
     if (!file_exists($composerFilePath)) {
         throw new Exception('composer.json not found');
