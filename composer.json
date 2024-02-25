@@ -54,7 +54,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "EliseuSantos\\Providers\\ZoomServiceProvider"
+                "EliseuSantos\\Providers\\ContaAzulServiceProvider"
             ],
             "aliases": {
                 "ContaAzul": "EliseuSantos\\Facades\\ContaAzul"
