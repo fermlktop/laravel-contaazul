@@ -1,3 +1,11 @@
+## [1.1.1](https://github.com/EliseuSantos/laravel-contaazul/compare/v1.1.0...v1.1.1) (2024-02-25)
+
+
+### Bug Fixes
+
+* fix package position ([c3f42d8](https://github.com/EliseuSantos/laravel-contaazul/commit/c3f42d88ed0973db5c03defe304914f2bbc9c652))
+* fix readme ([97968d6](https://github.com/EliseuSantos/laravel-contaazul/commit/97968d6fb2bf01b62c51e9b851fed556ecbc61e7))
+
 # [1.1.0](https://github.com/EliseuSantos/laravel-contaazul/compare/v1.0.0...v1.1.0) (2024-02-25)
 
 
