@@ -1,3 +1,11 @@
+# [1.1.0](https://github.com/EliseuSantos/laravel-contaazul/compare/v1.0.0...v1.1.0) (2024-02-25)
+
+
+### Features
+
+* update package ([817a140](https://github.com/EliseuSantos/laravel-contaazul/commit/817a140d4b1b7eeb20a8c95219f98173ead0307d))
+* update package ([958c518](https://github.com/EliseuSantos/laravel-contaazul/commit/958c51883836d27b0b68c50d4e08f8fd692aa6a5))
+
 # 1.0.0 (2024-02-25)
 
 
