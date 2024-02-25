@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/EliseuSantos/laravel-contaazul/compare/v1.2.0...v1.2.1) (2024-02-25)
+
+
+### Bug Fixes
+
+* rename methods ([f339345](https://github.com/EliseuSantos/laravel-contaazul/commit/f339345b08c8940b2c3f7a9f01574a56806883a4))
+
 # [1.2.0](https://github.com/EliseuSantos/laravel-contaazul/compare/v1.1.3...v1.2.0) (2024-02-25)
 
 
