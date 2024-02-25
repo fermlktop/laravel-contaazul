@@ -47,6 +47,7 @@ CONTA_AZUL_CLIENT_TOKEN="your_token_here"
 
 Add these lines to your `.env` file and replace `"your_token_here"` with your actual Conta Azul API token.
 
+
 ## Usage
 
 After setting up your configuration, you can use the Conta Azul service throughout your Laravel application. Here's an example of listing customers using the Conta Azul facade:
