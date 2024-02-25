@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/EliseuSantos/laravel-contaazul/compare/v1.1.2...v1.1.3) (2024-02-25)
+
+
+### Bug Fixes
+
+* fix documentation and config example ([de32748](https://github.com/EliseuSantos/laravel-contaazul/commit/de32748a4ba1a0583d4e98d3eefa13f270bffe70))
+
 ## [1.1.2](https://github.com/EliseuSantos/laravel-contaazul/compare/v1.1.1...v1.1.2) (2024-02-25)
 
 
