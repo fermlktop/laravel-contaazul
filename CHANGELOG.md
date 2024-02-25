@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/EliseuSantos/laravel-contaazul/compare/v1.1.3...v1.2.0) (2024-02-25)
+
+
+### Features
+
+* fix routes and logic ([864c9e2](https://github.com/EliseuSantos/laravel-contaazul/commit/864c9e22f278ec220d3996f87e0d5ad63651177b))
+
 ## [1.1.3](https://github.com/EliseuSantos/laravel-contaazul/compare/v1.1.2...v1.1.3) (2024-02-25)
 
 
