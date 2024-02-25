@@ -10,6 +10,7 @@ on:
 
 jobs:
   create-release:
+    name: Release Package
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -36,3 +37,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           branch: main
+
+      - name: Update Packagist
+        uses: mnavarrocarter/packagist-update@v1.0
+        with:
+          username: "eliseusantos"
+          api_token: ${{ secrets.PACKAGIST_TOKEN }}
+          package_name: vendor/laravel-contaazul
+          domain: "packagist.org"
