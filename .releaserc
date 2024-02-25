@@ -5,7 +5,7 @@
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     ["@semantic-release/exec", {
-      "prepareCmd": "php update-composer-version.php ${nextRelease.version}"
+      "prepareCmd": "php ./scripts/update-composer-version.php ${nextRelease.version}"
     }],
     "@semantic-release/git",
     "@semantic-release/github"
