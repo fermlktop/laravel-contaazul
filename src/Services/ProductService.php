@@ -6,49 +6,49 @@ use Illuminate\Support\Facades\Http;
 
 class ProductService
 {
-    public function createProduct(array $data): object
+    public function create(array $data): object
     {
         $response = Http::contaAzul()->post("/v1/products", $data);
 
         return $response->json();
     }
 
-    public function getProducts(): object
+    public function get($filters=[]): object
     {
         $response = Http::contaAzul()->get("/v1/products");
 
         return $response->json();
     }
 
-    public function getCategory(string $id): object
+    public function categoryById(string $id): object
     {
         $response = Http::contaAzul()->get("/v1/product-categories/$id");
 
         return $response->json();
     }
 
-    public function getCategories(): object
+    public function categories($filters=[]): object
     {
         $response = Http::contaAzul()->get("/v1/product-categories");
 
         return $response->json();
     }
 
-    public function getProductById(string $id): object
+    public function byId(string $id): object
     {
         $response = Http::contaAzul()->get("/v1/products/$id");
 
         return $response->json();
     }
 
-    public function updateProductById(string $id, array $data): object
+    public function update(string $id, array $data): object
     {
         $response = Http::contaAzul()->put("/v1/products/$id", $data);
 
         return $response->json();
     }
 
-    public function deleteProductById(string $id): object
+    public function delete(string $id): object
     {
         $response = Http::contaAzul()->delete("/v1/products/$id");
 
