@@ -1,12 +1,10 @@
 # Laravel Conta Azul Integration Package
 This package provides a simple and elegant way to integrate Laravel applications with Conta Azul's API, offering an easy-to-use service and facade.
 
-![Header Image](https://github.com/EliseuSantos/.github/header.png)
-
 <p align="center">
  <a href="https://github.com/EliseuSantos/laravel-contaazul/actions?query=workflow%3ATests"><img src="https://github.com/EliseuSantos/laravel-contaazul/workflows/Tests/badge.svg" style="max-width:100%;"  alt="tests badge"></a>
- <a href="https://packagist.org/packages/eliseusantos/laravel-contaazul"><img src="https://img.shields.io/packagist/v/macsidigital/laravel-contaazul.svg?style=flat-square" alt="version badge"/></a>
- <a href="https://packagist.org/packages/eliseusantos/laravel-contaazul"><img src="https://img.shields.io/packagist/dt/macsidigital/laravel-contaazul.svg?style=flat-square" alt="downloads badge"/></a>
+ <a href="https://packagist.org/packages/eliseusantos/laravel-contaazul"><img src="https://img.shields.io/packagist/v/EliseuSantos/laravel-contaazul.svg?style=flat-square" alt="version badge"/></a>
+ <a href="https://packagist.org/packages/eliseusantos/laravel-contaazul"><img src="https://img.shields.io/packagist/dt/EliseuSantos/laravel-contaazul.svg?style=flat-square" alt="downloads badge"/></a>
 </p>
 
 ## Features
@@ -32,7 +30,7 @@ composer require eliseusantos/laravel-contaazul
 2. Publish the configuration file:
 
 ```bash
-php artisan vendor:publish --provider="EliseuSantos\Providers\ContaAzulServiceProvider"
+php artisan vendor:publish --provider="EliseuSantos\ContaAzul\Providers\ContaAzulServiceProvider"
 ```
 
 This command publishes the `contaazul.php` configuration file to your Laravel application's `config` directory.
@@ -49,12 +47,13 @@ CONTA_AZUL_CLIENT_TOKEN="your_token_here"
 
 Add these lines to your `.env` file and replace `"your_token_here"` with your actual Conta Azul API token.
 
+
 ## Usage
 
 After setting up your configuration, you can use the Conta Azul service throughout your Laravel application. Here's an example of listing customers using the Conta Azul facade:
 
 ```php
-use EliseuSantos\Facades\ContaAzul;
+use EliseuSantos\ContaAzul\Facades\ContaAzul as ContaAzul;
 
 $customers = ContaAzul::customer()->getCustomers();
 ```

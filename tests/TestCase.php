@@ -34,8 +34,8 @@ abstract class TestCase extends Orchestra
     protected function setupEnvironment($app)
     {
         if (env('CONTAAZUL_USE_LIVE_API')) {
-            $app['config']->set('contaazul.client_key');
-            $app['config']->set('contaazul.client_secret');
+            $app['Configs']->set('contaazul.client_key');
+            $app['Configs']->set('contaazul.client_secret');
         }
     }
 }

@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Http;
 
 class PlanService
 {
-    public function getCurrentPlan(): object
+    public function current(): object
     {
         $response = Http::contaAzul()->get("/v1/plans");
 

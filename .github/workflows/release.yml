@@ -1,5 +1,8 @@
 name: Release
 
+permissions:
+    contents: write
+
 on:
   push:
     branches:
@@ -7,25 +10,30 @@ on:
 
 jobs:
   create-release:
+    name: Release Package
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
           node-version: '21'
 
       - name: Install dependencies
         run: npm install
 
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+            php-version: '8.3'
+
       - name: Automated Versioning and Release
-        uses: semantic-release/semantic-release-action@v2
+        uses: cycjimmy/semantic-release-action@v4
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         with:
           branch: main
-          dryRun: false

@@ -4,5 +4,8 @@
   },
   "scripts": {
     "release": "semantic-release"
+  },
+  "dependencies": {
+    "@semantic-release/exec": "^6.0.3"
   }
 }
