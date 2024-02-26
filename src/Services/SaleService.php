@@ -7,14 +7,14 @@ use Illuminate\Support\Facades\Http;
 
 class SaleService
 {
-    public function create(array $data): object
+    public function create(array $data): array
     {
         $response = Http::contaAzul()->post("/v1/sales", $data);
 
         return $response->json();
     }
 
-    public function pdf(string $id): object
+    public function pdf(string $id): array
     {
         $response = Http::contaAzul()->get("/v1/sales/$id/pdf");
         $fileName = 'sale-pdf.pdf';
@@ -25,70 +25,70 @@ class SaleService
         ]);
     }
 
-    public function banks(string $id): object
+    public function banks(string $id): array
     {
         $response = Http::contaAzul()->get("/v1/sales/banks");
 
         return $response->json();
     }
 
-    public function update(string $saleId, array $data): object
+    public function update(string $saleId, array $data): array
     {
         $response = Http::contaAzul()->put("/v1/sales/$saleId", $data);
 
         return $response->json();
     }
 
-    public function updateInstallment(string $saleId, string $numberInstallment, array $data): object
+    public function updateInstallment(string $saleId, string $numberInstallment, array $data): array
     {
         $response = Http::contaAzul()->put("/v1/sales/$saleId/installments/$numberInstallment", $data);
 
         return $response->json();
     }
 
-    public function installmentsByNumber(string $saleId, string $numberInstallment): object
+    public function installmentsByNumber(string $saleId, string $numberInstallment): array
     {
         $response = Http::contaAzul()->get("/v1/sales/$saleId/installments/$numberInstallment");
 
         return $response->json();
     }
 
-    public function report(array $filters=[]): object
+    public function report(array $filters=[]): array
     {
         $response = Http::contaAzul()->get("/v1/sales/totals", $filters);
 
         return $response->json();
     }
 
-    public function items(string $saleId, array $filters=[]): object
+    public function items(string $saleId, array $filters=[]): array
     {
         $response = Http::contaAzul()->get("/v1/sales/$saleId/items");
 
         return $response->json();
     }
 
-    public function byId(string $saleId): object
+    public function byId(string $saleId): array
     {
         $response = Http::contaAzul()->get("/v1/sales/$saleId");
 
         return $response->json();
     }
 
-    public function sellers(): object
+    public function sellers(): array
     {
         $response = Http::contaAzul()->get("/v1/sales/sellers");
 
         return $response->json();
     }
 
-    public function sales(): object
+    public function sales(): array
     {
         $response = Http::contaAzul()->get("/v1/sales");
 
         return $response->json();
     }
 
-    public function delete(string $id): object
+    public function delete(string $id): array
     {
         $response = Http::contaAzul()->delete("/v1/sales/$id");
 

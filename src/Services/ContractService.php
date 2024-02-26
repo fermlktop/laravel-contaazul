@@ -6,14 +6,14 @@ use Illuminate\Support\Facades\Http;
 
 class ContractService
 {
-    public function create(array $data): object
+    public function create(array $data): array
     {
         $response = Http::contaAzul()->post("/v1/contracts", $data);
 
         return $response->json();
     }
 
-    public function byId(string $id): object
+    public function byId(string $id): array
     {
         $response = Http::contaAzul()->get("/v1/contracts/$id");
 
