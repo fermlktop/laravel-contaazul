@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/EliseuSantos/laravel-contaazul/compare/v1.2.1...v1.2.2) (2024-02-26)
+
+
+### Bug Fixes
+
+* Fix response type ([c2d441c](https://github.com/EliseuSantos/laravel-contaazul/commit/c2d441c4228cd9cdd806846440a9bda125eae1aa))
+
 ## [1.2.1](https://github.com/EliseuSantos/laravel-contaazul/compare/v1.2.0...v1.2.1) (2024-02-25)
 
 
